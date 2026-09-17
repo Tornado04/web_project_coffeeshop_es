@@ -67,8 +67,92 @@
       </div>
     </header>
     <main class="main-content">
-      <section class="section-reservation"></section>
+      <section class="section-reservation">
+        <h2 class="section-reservation__title">Reservar una mesa</h2>
+        <form action="#" class="form">
+          <fieldset class="form__fieldset">
+            <label for="nombre" class="form__label">Nombre *</label>
+            <input
+              type="text"
+              class="form__input"
+              id="nombre"
+              required
+              placeholder="Nombre"
+            />
+            <label for="num-comensales" class="form__label"
+              >Número de comensales *</label
+            >
+            <input
+              type="number"
+              class="form__input"
+              id="num-comensales"
+              required
+              placeholder="1-8"
+              min="1"
+              max="8"
+            />
+            <label for="fecha-hora" class="form__label">Fecha y hora *</label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              id="fecha-hora"
+              required
+            />
+            <label for="email" class="form__label"
+              >Tu correo electrónico *</label
+            >
+            <input
+              type="email"
+              class="form__input"
+              id="email"
+              required
+              placeholder="email@email.com"
+            />
+          </fieldset>
+          <button class="form__button">Reservar una mesa</button>
+          <label for="aggrement" class="form__label form__label_aling-items">
+            <input
+              type="checkbox"
+              class="form__checkbox"
+              id="aggrement"
+              required
+            />
+            Acepto los términos de uso
+          </label>
+        </form>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <img
+          src="./images/logo_coffeeshop_light.svg"
+          alt="footer-logo"
+          class="footer-logo"
+        />
+        <div class="footer-redes-sociales">
+          <h3 class="footer-redes-social__title">Redes sociales</h3>
+          <ul class="footer__list-links">
+            <li class="footer__links">
+              <img
+                src="./images/facebook_white.svg"
+                alt="enlace a facebook"
+                class="footer__link-img"
+              />
+              <a href="#" class="footer_link">Facebook</a>
+            </li>
+            <li class="footer__links">
+              <img
+                src="./images/instagram_white.svg"
+                alt="enlace a instagram"
+                class="footer__link-img"
+              />
+              <a href="#" class="footer_link">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-circle"></div>
+      </div>
+      <p class="footer-copyright">&copy; 2026 Santiago Alfonso Blanquicett</p>
+    </footer>
   </body>
 </html>
