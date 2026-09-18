@@ -1,15 +1,17 @@
 .footer {
-  position: relative;
   background-color: #d35722;
   padding: 60px 80px;
   color: #ffffff;
+  position: relative;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 108px;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-logo {
@@ -17,18 +19,19 @@
   height: 39px;
 }
 
-.footer-redes-sociales {
+.footer-content-links {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.footer-redes-social__title {
+.footer-content-links__title {
   font-family: “Inter”;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  margin: 0px;
 }
 
 .footer__list-links {
@@ -70,10 +73,13 @@
 .footer-circle {
   width: 340px;
   height: 340px;
-  position: absolute;
-  top: 128px;
-  left: 4px;
   background-color: #e96e3a;
   border-radius: 50%;
-  z-index: -1;
+  position: absolute;
+  top: -120px;
+  left: -84px;
+}
+
+.footer_link:hover {
+  color: #ffd6c5;
 }
