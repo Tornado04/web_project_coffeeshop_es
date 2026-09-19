@@ -1,4 +1,4 @@
-# Proyecto Triple Espresso
+# Nombre del proyecto: Triple Espresso
 
 ## Descripción del proyecto
 
